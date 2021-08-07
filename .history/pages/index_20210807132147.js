@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Banner from '../Components/Banner'
-import Footer from '../Components/Footer';
 import Header from '../Components/Header'
 import LargeCard from '../Components/LargeCard';
 import MediumCard from '../Components/MediumCard';
@@ -15,7 +14,7 @@ export default function Home({ exploreData, cardData }) {
       </Head>
       <Header />
       <Banner />
-      <main className="max-w-7xl mx-auto px-4 sm:px-16">
+      <main className="max-w-7xl mx-auto px-8 sm:px-16">
         <section className="pt-6">
           <h2 className="text-4xl font-semibold pb-5">Explore Nearby</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -42,7 +41,6 @@ export default function Home({ exploreData, cardData }) {
             buttonText="Get Isnpired"
           />
         </section>
-        <Footer />
       </main>
     </div>
   )
